@@ -13,7 +13,7 @@ summary(Salaries)
 # pipe operator (%>$) says take dataset on left hand side and move it to right hand side
 
 Salaries %>%
-group_by(sex, rank, discipline) >%>
+group_by(sex, rank) >%>
 summarize(mean_salary = mean(salary), 
 			sd_salary = sd(salary),
 			n = count()
